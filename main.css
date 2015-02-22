@@ -1,0 +1,78 @@
+            body {
+                font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;"
+                font-size: 100%;
+                margin: 60px auto;  /* top and bottom <> right and left */
+                width: 60%;
+                padding: 0;
+            }
+
+            section {
+                line-height: 1.5;
+            }
+
+            h1 {
+                display: inline;
+                font-size: 3em;
+                letter-spacing: 0.1em;
+                text-shadow: 0.5px 0.5px #8e8e8e;
+            }
+
+            h2 {
+                font-size: 1.3em; /* want to make just the border smaller, how? */
+                color: #3e83bc;
+                margin: 20px 0 0 0 ;
+                padding-top: 8px;
+                border-top-style: dotted;
+                border-width: 0.1em;
+                border-color: #8e8e8e;
+            }
+
+            h3 {
+                font-size: 1.1em;
+                margin: 5px auto;
+                padding-top: 10px;
+            }
+
+            h4 {
+                font-size: 1.0em;
+                font-weight: normal;
+                line-height: 80%;
+                margin: 0 auto;
+            }
+
+            p {
+
+            }
+
+            ul {
+                margin-top: 10px;
+            }
+
+            .lastname {
+                color: #3e83bc;
+            }
+
+            .address {
+                display: inline;
+                color: #8e8e8e;
+                font-size: 0.9em;
+                line-height: 0;
+            }
+
+            .bluedot {
+                color: #3e83bc;
+                font-size: 1.5em;
+                vertical-align: middle;
+            }
+
+            .time {
+                font-size: 0.8em;
+                font-style: italic;
+                color: #8e8e8e;
+                margin: 0 auto;
+
+            }
+
+            .listheading {
+                margin-bottom: -10px;
+            }
