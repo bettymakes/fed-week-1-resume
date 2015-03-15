@@ -8,6 +8,8 @@
 
             section {
                 line-height: 1.5;
+                border-top: 2px dotted #8e8e8e;
+                display: inline-block;
             }
 
             h1 {
@@ -18,19 +20,16 @@
             }
 
             h2 {
-                font-size: 1.3em; /* want to make just the border smaller, how? */
+                font-size: 1.3em;
                 color: #3e83bc;
-                margin: 20px 0 0 0 ;
-                padding-top: 8px;
-                border-top-style: dotted;
-                border-width: 0.1em;
-                border-color: #8e8e8e;
+                margin: 5px auto;
+               /* border: 2px solid #00ff00; */
+                float: left;
             }
 
             h3 {
                 font-size: 1.1em;
                 margin: 5px auto;
-                padding-top: 10px;
             }
 
             h4 {
@@ -41,14 +40,14 @@
             }
 
             p {
-
+                margin: 5px auto;
             }
 
             ul {
                 margin-top: 10px;
             }
 
-            .lastname {
+            #lastname {
                 color: #3e83bc;
             }
 
@@ -74,5 +73,12 @@
             }
 
             .listheading {
-                margin-bottom: -10px;
+                margin-bottom: 0px;
             }
+
+            .floatright {
+            /*    border: 2px solid #ff0000; */
+                float: right;
+                width: 75%;
+            }
+            
