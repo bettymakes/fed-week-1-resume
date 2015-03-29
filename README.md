@@ -1,6 +1,6 @@
 # [FED] Reviewing Andrew's Question
 
-**Q: Why does the right column in my resume not line up properly on the left?**  
+**Q: Why does the right column in my resume not line up properly?**  
   
 
 Heya Andrew!  
