@@ -1,142 +1,173 @@
-            html {
-              box-sizing: border-box;
-            }
+html {
+  box-sizing: border-box;
+}
 
-            *, *:before, *:after {
-                box-sizing: inherit;
-                }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
-            body {
-                font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;"
-                font-size: 100%;
-                margin: 60px auto;
-                width: 65%;
-                padding: 0;
-                background-color: #fcfcfc;
-            }
+body {
+    font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;"
+    
+    /* Setting your base font size with a fixed pixel instead */
+    font-size: 16px;
+    
+    margin: 60px auto;
+    width: 65%;
+    padding: 0;
+    background-color: #fcfcfc;
+}
 
-            section {
-                line-height: 1.5;
-                border-top: 2px dotted #8e8e8e;
-                display: inline-block;
-                margin-top: 10px;
-                width: 100%;
-            }
+section {
+    line-height: 1.5;
+    border-top: 2px dotted #8e8e8e;
+    display: inline-block;
+    margin-top: 10px;
+    width: 100%;
+}
 
-            h1 {
-                display: inline;
-                font-size: 3em;
-                letter-spacing: 0.1em;
-                text-shadow: 0.5px 0.5px #8e8e8e;
-            }
+h1 {
+    display: inline;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    text-shadow: 0.5px 0.5px #8e8e8e;
+}
 
-            h2 {
-                font-size: 1.3em;
-                color: #3e83bc;
-                margin: 5px auto;
-                float: left;
-            }
+h2 {
+    font-size: 1.3em;
+    color: #3e83bc;
+    margin: 5px auto;
+    float: left;
+}
 
-            h3 {
-                font-size: 1.1em;
-                margin: 5px auto;
-            }
+h3 {
+    font-size: 1.1em;
+    margin: 5px auto;
+}
 
-            h4 {
-                font-size: 1.0em;
-                font-weight: normal;
-                line-height: 80%;
-                margin: 0 auto;
-            }
+h4 {
+    font-size: 1.0em;
+    font-weight: normal;
+    line-height: 80%;
+    margin: 0 auto;
+}
 
-            p {
-                margin: 0;
-            }
+p {
+    margin: 0;
+}
 
-            p.time {
-                margin-bottom: 10px
-            }
+p.time {
+    margin-bottom: 10px
+}
 
-            ul {
-                margin: 5px 0 15px 0;
-            }
+ul {
+    margin: 5px 0 15px 0;
+}
 
-            #lastname {
-                color: #3e83bc;
-            }
+#lastname {
+    color: #3e83bc;
+}
 
-            .address {
-                display: inline;
-                color: #8e8e8e;
-                font-size: 0.9em;
-                line-height: 0;
-            }
+.address {
+    display: inline;
+    color: #8e8e8e;
+    font-size: 0.9em;
+    line-height: 0;
+}
 
-            .bluedot {
-                color: #3e83bc;
-                font-size: 1.5em;
-                vertical-align: middle;
-            }
+.bluedot {
+    color: #3e83bc;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
 
-            .time {
-                font-size: 0.8em;
-                font-style: italic;
-                color: #8e8e8e;
-                margin: 0 auto;
+.time {
+    font-size: 0.8em;
+    font-style: italic;
+    color: #8e8e8e;
+    margin: 0 auto;
 
-            }
+}
 
-            .listheading {
-                margin-bottom: 0px;
-            }
+.listheading {
+    margin-bottom: 0px;
+}
 
-            .float {
-                float: left;
-                width: 70%;
-            }
-            
-            .header {
-                float: left;
-                margin-right: 50px;
-            }
 
-            /****************************************
-            Pseudo-classes
-            ****************************************/
-            a:link, a:visited {
-                color: #3e83bc;
-                text-decoration: none;
-            }
+/* I would suggest renaming this class of "float" to something
+more semantic. It should be descriptive about the content it's wrapping. */
+.float {
+    float: left;
+    width: 70%;
+}
 
-            a:hover {
-                color: #060505;
-                text-decoration: underline;
-            }
+.header {
+    float: left;
+    /* 
+    Setting a fixed width for the right column.
+    
+    Let's say, we want to se the width at 200px wide.
+    Using Mina's formula:
+    
+    Target ÷ Context = Result
+    200px ÷ 16px = 12.5rem
 
-            a:active {
-                color: #BC3E48;
-            }
+    ------ 
 
-            /****************************************
-            Media Queries
-            ****************************************/
-            @media screen and (max-width: 640px) {
-                body {
-                    width: 95%;
-                    margin: 0 auto;
-                    font-size: 95%;
-                    background-color: #ffffff;
-                }
+    Having said that, since your right column is 70% wide,
+    let's set your right column to 30% wide and remove the margin.
+    
+    In essence, we have basically created a 2 column grid right?
+    */
+    width: 30%;
+}
 
-                .float {
-                    width: 100%;
-                }
+/****************************************
+Pseudo-classes
+****************************************/
+a:link, a:visited {
+    color: #3e83bc;
+    text-decoration: none;
+}
 
-                h1 {
-                    font-size: 2.3em;
-                }
+a:hover {
+    color: #060505;
+    text-decoration: underline;
+}
 
-                header {
-                    padding-bottom: 5px;
-                }
-            }
+a:active {
+    color: #BC3E48;
+}
+
+/****************************************
+Media Queries
+****************************************/
+/* Awesome Andrew! You chose your breakpoint using max-width because 
+you're converting code that was initially designed for desktop, right? */
+@media screen and (max-width: 640px) {
+    body {
+        width: 95%;
+        margin: 0 auto;
+        font-size: 95%;
+        background-color: #ffffff;
+    }
+
+    .float {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2.3em;
+    }
+
+    header {
+        padding-bottom: 5px;
+    }
+
+     /* If we want the header to take up a full column at this point,
+        I'll set the width to 100% at this breakpoint */
+    .header {
+        width: 100%;
+        margin-right: 0;
+    }
+}
